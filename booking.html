@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Session — Mervin Carballo | San Diego</title>
+  <meta name="description" content="Book a tattoo session with Mervin Carballo in San Diego, California.">
+  <link rel="canonical" href="https://eternowebstudio.com/vedic_electric/booking.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root{--black:#06030f;--charcoal:#0e0a1a;--violet:#9D4EDD;--violet-bright:#b06aee;--violet-dim:rgba(157,78,221,0.4);--violet-glow:rgba(157,78,221,0.15);--white:#f0ecff;--dim:#7a7090;--border:rgba(157,78,221,0.12)}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{background:var(--black);color:var(--white);font-family:'DM Sans',sans-serif;font-weight:300;line-height:1.6;overflow-x:hidden}
+    body::before{content:'';position:fixed;inset:0;z-index:9998;pointer-events:none;opacity:0.035;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");background-size:200px}
+    nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:20px 60px;background:rgba(6,3,15,0.85);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+    .nav-logo{font-family:'Cinzel',Georgia,serif;font-size:1rem;font-weight:500;letter-spacing:0.18em;color:var(--white);text-decoration:none;text-transform:uppercase}
+    .nav-links{display:flex;gap:36px;list-style:none;align-items:center}
+    .nav-links a{color:var(--dim);text-decoration:none;font-size:0.7rem;letter-spacing:0.14em;text-transform:uppercase;transition:color 0.25s}
+    .nav-links a:hover,.nav-links a.active{color:var(--violet-bright)}
+    .lang-toggle{background:none;border:1px solid var(--border);color:var(--dim);font-size:0.65rem;letter-spacing:0.14em;text-transform:uppercase;padding:6px 14px;cursor:pointer;transition:all 0.25s;font-family:'DM Sans',sans-serif}
+    .lang-toggle:hover{border-color:var(--violet);color:var(--violet-bright)}
+    .hamburger{display:none;background:none;border:none;cursor:pointer;padding:4px}
+    .hamburger span{display:block;width:22px;height:1px;background:var(--white);margin:5px 0;transition:all 0.3s}
+    .mobile-menu{display:none;position:fixed;top:65px;left:0;right:0;z-index:99;background:rgba(14,10,26,0.98);padding:24px 60px;border-bottom:1px solid var(--border)}
+    .mobile-menu.open{display:block}
+    .mobile-menu a{display:block;color:var(--white);text-decoration:none;font-size:0.85rem;letter-spacing:0.1em;text-transform:uppercase;padding:12px 0;border-bottom:1px solid var(--border)}
+    .fade-up{opacity:0;transform:translateY(28px);transition:opacity 0.8s ease,transform 0.8s ease}
+    .fade-up.visible{opacity:1;transform:translateY(0)}
+    footer{background:var(--charcoal);padding:48px 72px;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center}
+    .footer-logo{font-family:'Cinzel',Georgia,serif;font-size:0.95rem;color:var(--dim);letter-spacing:0.12em}
+    .footer-links{display:flex;gap:28px}
+    .footer-links a{color:var(--dim);text-decoration:none;font-size:0.68rem;letter-spacing:0.12em;text-transform:uppercase;transition:color 0.2s}
+    .footer-links a:hover{color:var(--violet-bright)}
+    .footer-copy{color:var(--dim);font-size:0.68rem}
+    .section-label{font-family:'DM Sans',sans-serif;font-size:0.65rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--violet);margin-bottom:16px;opacity:0.85}
+    h1{font-family:'Cinzel',Georgia,serif;font-size:clamp(3rem,6vw,5rem);font-weight:400;line-height:1;letter-spacing:0.03em;background:linear-gradient(135deg,#f0ecff 0%,#c4a8e8 50%,#f0ecff 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:16px}
+    .page-hero{min-height:50vh;display:flex;align-items:center;padding:120px 80px 80px;position:relative;overflow:hidden}
+    .page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 100% 80% at 50% 0%,rgba(60,20,100,0.4) 0%,transparent 70%)}
+    .page-hero-content{position:relative;z-index:2;max-width:700px}
+    .booking-section{padding:80px;max-width:800px;margin:0 auto}
+    .booking-intro{color:var(--dim);font-size:1rem;margin-bottom:48px;line-height:1.8}
+    .booking-cards{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:48px}
+    .booking-card{background:rgba(157,78,221,0.04);border:1px solid var(--border);padding:40px;text-align:center;transition:all 0.3s}
+    .booking-card:hover{border-color:var(--violet-dim);box-shadow:0 0 30px var(--violet-glow)}
+    .booking-card h3{font-family:'Cinzel',Georgia,serif;font-size:1.2rem;font-weight:400;margin-bottom:12px;color:var(--violet-bright)}
+    .booking-card p{color:var(--dim);font-size:0.9rem;line-height:1.6;margin-bottom:20px}
+    .btn-violet{display:inline-block;background:var(--violet);color:#000;text-decoration:none;font-size:0.68rem;letter-spacing:0.2em;text-transform:uppercase;padding:14px 32px;font-family:'DM Sans',sans-serif;font-weight:500;box-shadow:0 0 24px var(--violet-dim);transition:all 0.3s}
+    .btn-violet:hover{background:var(--violet-bright);box-shadow:0 0 40px var(--violet-dim);transform:translateY(-2px)}
+    .btn-outline{display:inline-block;border:1px solid var(--border);color:var(--white);text-decoration:none;font-size:0.68rem;letter-spacing:0.2em;text-transform:uppercase;padding:14px 32px;font-family:'DM Sans',sans-serif;transition:all 0.3s}
+    .btn-outline:hover{border-color:var(--violet);color:var(--violet-bright);box-shadow:0 0 20px var(--violet-glow)}
+    @media(max-width:900px){nav{padding:18px 24px}.nav-links{display:none}.hamburger{display:block}footer{flex-direction:column;gap:24px;padding:40px 24px;text-align:center}.page-hero{padding:100px 24px 60px}.booking-section{padding:48px 24px}.booking-cards{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="./index.html" class="nav-logo">Mervin Carballo</a>
+    <ul class="nav-links">
+      <li><a href="./index.html" data-en="Home" data-es="Home">Home</a></li>
+      <li><a href="./about.html" data-en="About" data-es="Sobre Mí">About</a></li>
+      <li><a href="./tattoos.html" data-en="Tattoos" data-es="Tatuajes">Tattoos</a></li>
+      <li><a href="./booking.html" class="active" data-en="Booking" data-es="Reservaciones">Booking</a></li>
+      <li><a href="./testimonials.html" data-en="Reviews" data-es="Testimonios">Reviews</a></li>
+      <li><button class="lang-toggle" onclick="toggleLang()">ES</button></li>
+    </ul>
+    <button class="hamburger" onclick="this.classList.toggle('open');document.querySelector('.mobile-menu').classList.toggle('open')"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="mobile-menu">
+    <a href="./index.html">Home</a><a href="./about.html">About</a><a href="./tattoos.html">Tattoos</a><a href="./booking.html">Booking</a><a href="./testimonials.html">Reviews</a>
+  </div>
+
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <p class="section-label fade-up" data-en="Booking" data-es="Reservaciones">Booking</p>
+      <h1 class="fade-up" data-en="Book a Session" data-es="Reserva tu Sesión">Book a Session</h1>
+      <p class="fade-up" style="color:var(--dim);font-size:1.05rem;max-width:500px;line-height:1.7;">Ready to start your tattoo journey? Reach out and let's create something extraordinary together.</p>
+    </div>
+  </section>
+
+  <section class="booking-section">
+    <p class="booking-intro fade-up">The best way to start is by sending a direct message on Instagram. Include a brief description of the tattoo concept, approximate size, and placement. I typically respond within 24-48 hours.</p>
+    
+    <div class="booking-cards">
+      <div class="booking-card fade-up">
+        <h3>📸 Instagram</h3>
+        <p>Send a DM with your idea</p>
+        <a href="https://www.instagram.com/vedic_electric" target="_blank" class="btn-violet">@vedic_electric</a>
+      </div>
+      <div class="booking-card fade-up">
+        <h3>📍 Studio</h3>
+        <p>San Diego, California</p>
+        <a href="https://www.instagram.com/vedic_electric" target="_blank" class="btn-outline">View Work</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-logo">Mervin Carballo</div>
+    <div class="footer-links">
+      <a href="./index.html">Home</a><a href="./about.html">About</a><a href="./tattoos.html">Tattoos</a><a href="./booking.html">Booking</a><a href="./testimonials.html">Testimonials</a><a href="https://www.instagram.com/vedic_electric" target="_blank">Instagram</a>
+    </div>
+    <div class="footer-copy">© 2026 Mervin Carballo</div>
+  </footer>
+  <script>
+    const LANG={default:'en',current:document.documentElement.lang||'en'};
+    function toggleLang(){LANG.current=LANG.current==='es'?'en':'es';document.documentElement.lang=LANG.current;document.querySelectorAll('[data-es][data-en]').forEach(el=>{el.textContent=el.getAttribute('data-'+LANG.current)||el.textContent});const btn=document.querySelector('.lang-toggle');if(btn)btn.textContent=LANG.current==='es'?'EN':'ES'}
+    document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('[data-es][data-en]').forEach(el=>{el.textContent=el.getAttribute('data-'+LANG.current)||el.textContent})});
+    const obs=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:0.1});
+    document.querySelectorAll('.fade-up').forEach(el=>obs.observe(el));
+  </script>
+</body>
+</html>
